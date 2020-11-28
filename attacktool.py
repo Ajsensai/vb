@@ -7,3 +7,11 @@ def unreal_backdoor():
     os.system(command)
 
 unreal_backdoor()
+
+def nmap():
+    h = input('Please enter the address of metasploitable: ')
+    print("Starting exploit against", h)
+    command = "msfconsole -x 'nmap -v -sV" + h
+    os.system(command)
+
+nmap()
